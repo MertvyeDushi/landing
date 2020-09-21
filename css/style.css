@@ -79,6 +79,12 @@ body {
 	left: 50%;
 
 	transform: translate(-50%, -50%);
+
+	text-align: center;
+}
+
+.header__title {
+	margin-bottom: 60px;
 }
 
 .heading-primary {
@@ -106,6 +112,67 @@ body {
 	letter-spacing: 17.4px;
 
 	animation: moveInRight .5s ease-out;
+}
+
+
+/* Buttons */
+
+.btn:link, .btn:visited {
+	display: inline-block;
+	position: relative;
+	
+	text-transform: uppercase;
+	text-decoration: none;
+
+	padding: 15px 40px;
+	border-radius: 100px;
+
+	transition: all .2s;
+}
+
+.btn::after {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	border-radius: 100px;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
+
+	transition: all .4s;
+}
+
+.btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.5);
+	opacity: 0;
+}
+
+.btn:active {
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn--white {
+	background-color: #fff;
+	color: #777;
+}
+
+.btn--white::after {
+	background-color: #fff;
+}
+
+.btn--animated {
+	animation: moveInBottom .5s ease-out .35s;
+	animation-fill-mode: backwards;
 }
 
 
@@ -140,5 +207,17 @@ body {
 	100% {
 		opacity: 1;
 		transform: translateX(0);
+	}
+}
+
+@keyframes moveInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
