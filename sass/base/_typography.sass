@@ -55,7 +55,22 @@ body
 		transition: all .2s
 
 
-
 		&:hover
 			transform: skew(10deg, 2deg) scale(1.1)
 			text-shadow: .5rem 1rem 2rem rgba($color_black, .2)
+
+
+	&-tertiary
+		font-size: $default_fs
+		font-weight: 700
+		text-transform: uppercase
+
+
+// Paragraph
+
+.paragraph
+	font-size: $default_fs
+
+	&:not(:last-child)
+		margin-bottom: 3rem
+		

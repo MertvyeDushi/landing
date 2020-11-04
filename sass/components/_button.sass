@@ -8,7 +8,7 @@
 	display: inline-block
 	position: relative
 	
-	font-size: 1.6rem
+	font-size: $default_fs
 	text-transform: uppercase
 	text-decoration: none
 
@@ -61,3 +61,36 @@
 	&--animated 
 		animation: moveInBottom .5s ease-out .35s
 		animation-fill-mode: backwards
+
+
+.btn--text
+	&:link,
+	&:visited
+		display: inline-block
+
+		font-size: $default_fs
+		color: $color_primary
+		text-decoration: none
+
+		border-bottom: 1px solid $color_primary
+		padding: .3rem
+
+		transition: all .2s
+
+	
+	&:hover
+		background-color: $color_primary
+		color: $color_white
+
+		box-shadow: 0 1rem 2rem rgba($color_black, .15)
+
+		transform: translateY(-2px)
+
+	
+	&:active
+		box-shadow: 0 .5rem 1rem rgba($color_black, .15)
+
+		transform: translateY(0)
+	
+
+
