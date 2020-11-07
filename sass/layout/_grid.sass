@@ -15,8 +15,16 @@
 	// [class$="col-"] // Selecting elements containing a class attribute with a value ending in "col-"
 	// [class^="col-"] // Selecting elements containing a class attribute with a value starting with "col-"
 		
-	[class^="col-"]
+	// [class^="col"] // Don't work (???)
+	// 	float: left
+		
+
+	// 	&:not(:last-child)
+	// 		margin-right: $gutter_horizontal
+
+	.col-1-of-2, .col-1-of-3, .col-2-of-3, .col-1-of-4, .col-2-of-4, .col-3-of-4
 		float: left
+		
 
 		&:not(:last-child)
 			margin-right: $gutter_horizontal
