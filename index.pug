@@ -6,6 +6,7 @@ html(lang="en")
 		
 		link(href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet")
 
+		link(rel="stylesheet" href="css/icon-font.css")
 		link(rel="stylesheet" href="css/style.css")
 		link(rel="shortcut icon" type="image/png" href="img/favicon.png")
 		
@@ -27,6 +28,7 @@ html(lang="en")
 
 
 		main
+
 			section.section-about
 
 				.section-about__title-box(class="u-ta-center u-mb-big")
@@ -52,3 +54,32 @@ html(lang="en")
 							img.composition__photo.composition__photo--1(src="img/nat-1-large.jpg", alt="Photo 1")
 							img.composition__photo.composition__photo--2(src="img/nat-2-large.jpg", alt="Photo 2")
 							img.composition__photo.composition__photo--3(src="img/nat-3-large.jpg", alt="Photo 3")
+
+		
+			section.section-features
+
+				.section-features__feature-content(class="row")
+
+					.section-features__feature-box(class="col-1-of-4")
+						.feature
+							i.feature__icon(class="icon-basic-world")
+							h3.feature__title(class="heading-tertiary u-mb-small") Explore the world
+							p.feature__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime voluptates soluta nisi necessitatibus.
+
+					.section-features__feature-box(class="col-1-of-4")
+						.feature
+							i.feature__icon(class="icon-basic-compass")
+							h3.feature__title(class="heading-tertiary u-mb-small") Meet nature
+							p.feature__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime voluptates soluta nisi necessitatibus.
+
+					.section-features__feature-box(class="col-1-of-4")
+						.feature
+							i.feature__icon(class="icon-basic-map")
+							h3.feature__title(class="heading-tertiary u-mb-small") Find your way
+							p.feature__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime voluptates soluta nisi necessitatibus.
+
+					.section-features__feature-box(class="col-1-of-4")
+						.feature
+							i.feature__icon(class="icon-basic-heart")
+							h3.feature__title(class="heading-tertiary u-mb-small") Live a healthier life
+							p.feature__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab maxime voluptates soluta nisi necessitatibus.
